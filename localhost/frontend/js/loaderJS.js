@@ -8,16 +8,10 @@ document.body.append(script_to_load);
 }
 
 
-
-
-
 window.addEventListener('load', function ()
 {
 console.log("start loading js");
 load_module("/frontend/js/jquery-3.6.0.js");
 load_module("/frontend/js/sortTableByField.js");
-
-
-
 
 });
