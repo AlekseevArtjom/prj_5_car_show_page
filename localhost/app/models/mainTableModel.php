@@ -24,15 +24,15 @@ class mainTableModel extends baseModel
                          from AUTO_MODEL t
                          left join AUTO_BRAND t1 on (t1.id = t.brand_id)
                          where t.production_end < :p_borderDate 
-						 group by t1.brand, t.model, t.production_end
-						 order by case when :p_sort_switch_on then t.body_id else t.id end ";
+			 group by t1.brand, t.model, t.production_end
+			 order by case when :p_sort_switch_on then t.body_id else t.id end ";
 		 
 		 //замечание -- здесь не ставлю блок try т.к. проверка на ошибки идет в родительском классе
 		 if($isAjax){
 			 
 			    return parent::extract_from_db_PDO($query_string, 'utf8', $parameters, true);	
 		 }else{
-				return parent::extract_from_db_PDO($query_string, 'utf8', $parameters);
+			    return parent::extract_from_db_PDO($query_string, 'utf8', $parameters);
 		 }
 	}
 	
@@ -45,15 +45,15 @@ class mainTableModel extends baseModel
                          cross join AUTO_SERVICE t2
                          where t.production_end is null
                          and price > :p_price 
-						 group by t1.brand, t.model, t2.service_name, t2.price
-						 order by case when :p_sort_switch_on then t.body_id else t.id end";
+			 group by t1.brand, t.model, t2.service_name, t2.price
+			 order by case when :p_sort_switch_on then t.body_id else t.id end";
 		 
 		 //замечание -- здесь не ставлю блок try т.к. проверка на ошибки идет в родительском классе
 		 if($isAjax){
 			 
 			    return parent::extract_from_db_PDO($query_string, 'utf8', $parameters, true);	
 		 }else{
-				return parent::extract_from_db_PDO($query_string, 'utf8', $parameters);
+			    return parent::extract_from_db_PDO($query_string, 'utf8', $parameters);
 		 }
 	}
 	
