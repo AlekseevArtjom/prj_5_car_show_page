@@ -1,0 +1,104 @@
+body{
+	background-color: rgba(200,230,200,0.4);
+	text-align: center;
+	font-size: 2vw;
+}
+
+
+
+#main{
+	width: 90vw;
+	margin: auto auto;
+	background-color: rgba(200,230,200,0.2);
+}
+
+
+
+#welcome{
+	border: 1px green solid;
+	border-radius: 5%;
+	width: 95%;
+	/*margin: auto auto;*/
+	margin:  2vw auto 2vw auto  ;
+	background-color: rgba(200,230,200,0.5);
+}
+
+
+.Tableblock{
+	margin: 0 auto 4vw auto
+}
+
+#messageBox{
+	background-color: rgba(70,70,70,0.4);
+	position: fixed; top: 0; bottom: 0; left: 0; right: 0;  	
+	
+	overflow: hidden;  											
+	overflow-y: auto;  											
+	z-index: 15;
+	
+	background-color: rgba(150,150,100,0.5);
+} 
+	
+#messageBox	div{
+	display: block;
+	margin: 10vw auto;
+	width: 80vw; 
+	min-width: 100px;
+	z-index: 10;
+	padding-bottom: 15px; padding-left: 13px; padding-right: 13px; padding-top: 10px;
+	background-color: rgba(160,180,160,0.9);
+	box-shadow: 0vw 0vw 5vw rgba(100,100,100,0.8);
+	border-radius: 7vw;
+}
+
+
+.hide {display: none;}
+.show {display: block;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#noscript_wraper
+{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 100%;
+}
+
+noscript
+{
+position: fixed; 
+top: 5%;
+width: 80%; 
+background-color: red; 
+font-size: 2vw; 
+color: green;
+}
+
+#support { display: none; }
